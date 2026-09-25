@@ -26,8 +26,8 @@ model User {
 model Student {
   id           Int           @id @default(autoincrement())
   name         String
-  rollNumber   Int?
-  registrationNumber Int?
+  rollNumber   String?
+  registrationNumber String?
   email        String        @unique
   branch       Branch        @relation(fields: [branchId], references: [id])
   branchId     Int

@@ -42,7 +42,7 @@ const SignupPage = () => {
     try {
       const body = {
         name,
-        email: role === 'student' ? `${rollNumber}@student.nitandhra.ac.in` : `${email}`,
+        email: role === 'student' ? `${rollNumber}@student.placementportal.com` : `${email}`,
         password,
         role,
         ...(role === 'student' ? { branchId, cgpa, rollNumber, registrationNumber } : {})
@@ -105,7 +105,7 @@ const SignupPage = () => {
 
   <div className='flex items-center'>
     <input
-      value={rollNumber ? `${rollNumber}@student.nitandhra.ac.in` : ''}
+     value={rollNumber ? `${rollNumber}@student.placementportal.com` : ''}
       readOnly
       placeholder="Email"
       style={{ width: '100%' }}

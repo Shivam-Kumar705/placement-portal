@@ -4,8 +4,8 @@ import loginbg from '../assets/dark2.png'
 
 const LoginPage = () => {
   const [role, setRole] = useState('student');
-  const [email, setEmail] = useState('pranupranjal850@gmail.com');
-  const [password, setPassword] = useState('123');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
   const handleLogin = async (e) => {
