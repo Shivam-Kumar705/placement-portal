@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/api': 'http://my-node-env.eba-f7fims4p.eu-north-1.elasticbeanstalk.com',
+      '/api': 'http://localhost:5000',
     },
   },
 })

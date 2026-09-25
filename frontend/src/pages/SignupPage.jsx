@@ -100,13 +100,18 @@ const SignupPage = () => {
                 <label className='text-blue-500'>Roll Number:</label>
                 <input value={rollNumber} onChange={e => setRollNumber(e.target.value)} required placeholder="Roll Number" />
               </div>
-              <div style={{ marginBottom: 16 }}>
-                <label className='text-blue-500'>Email:</label>
-                <div className='flex items-center'>
-                <input value={rollNumber} onChange={e => setEmail(e.target.value)} required placeholder="Email" />
-                <span style={{ fontSize: 18, color: '#6b7280' }}>@student.nitandhra.ac.in</span>
-                </div>
-              </div>
+            <div style={{ marginBottom: 16 }}>
+  <label className='text-blue-500'>Email:</label>
+
+  <div className='flex items-center'>
+    <input
+      value={rollNumber ? `${rollNumber}@student.nitandhra.ac.in` : ''}
+      readOnly
+      placeholder="Email"
+      style={{ width: '100%' }}
+    />
+  </div>
+</div>
             </>
           )}
           {role !== 'student' && (
